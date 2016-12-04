@@ -1,0 +1,9 @@
+declare module 'flux/utils' {
+  declare class ReduceStore<T> {
+    getState(): T;
+    getDispatchToken(): string;
+  }
+  declare class Container {
+    static create(): any;
+  }
+}
